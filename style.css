@@ -1,0 +1,269 @@
+ :root {
+      --red-normal: #E74246;
+       --red-light: #FB565A;
+       --red-dark: #D7373B;
+       --basic-black: #000000;
+       --lightblack-fonts: #283136;
+       --green-normal: #00BC6C;
+       --green-light: #00CA74;
+       --green-dark: #00AA62;
+       --yellow-light: #EFC84A;
+       --yellow-normal: #EAB534;
+       --yellow-dark: #E5A722;
+       --basic-white: #FFFFFF;
+       --gray: #A6A6A6;
+       --gray-filter-item: #4D4D4D;
+       --gray-social: #E1E1E1;
+       --background-gray: #EEEEEE;
+       --shadowgray: rgba(0, 1, 1, 0.1);
+       --light-gray: #D5D5D5;
+       --extra-light-gray: #DFDFDF;
+       --clear-black: rgba(0, 0, 0, 0.3);
+       --footer-font: #666666;
+       --footer-font2: ##444444;
+   }
+   /* Global */
+
+   body {
+       min-width: 960px;
+       margin: 0;
+       padding: 0;
+       font-family: "Roboto", Arial, sans-serif;
+       font-size: 16px;
+       line-height: 24px;
+       font-weight: 400;
+       color: var(--lightblack-fonts);
+       background-color: var(--basic-white);
+       background-image: url("../img/bg.jpg");
+       background-position: top center;
+       background-repeat: no-repeat;
+   }
+
+   a {
+       text-decoration: none;
+   }
+
+   img {
+       max-width: 100%;
+       height: auto;
+   }
+
+   .button {
+       font: inherit;
+       text-align: : left;
+       color: var(--basic-white);
+       vertical-align: middle;
+       text-transform: uppercase;
+       background-color: var(--red-light);
+       border: none;
+       padding: 15px;
+       padding-left: 30px;
+       padding-right: 30px;
+       border-radius: 3px;
+   }
+
+   .button:hover {
+     background-color: var(--red-normal);
+   }
+   .button:focus{
+     background-color: var(--red-dark);
+   }
+   /* main navigation */
+
+   .main-header {
+       font-size: 16px;
+       line-height: 30px;
+       color: var(--basic-black);
+       background-color: var(--background-gray);
+       font-weight: 500;
+       align-items: center;
+       text-transform: uppercase;
+   }
+
+   .main-header a {
+       color: var(--basic-black)
+   }
+
+   .site-nav,
+   .user-nav a {
+       list-style: none;
+   }
+   /* user navigation */
+
+   .site-nav a,
+   .user-nav a {
+       color: var(--basic-black);
+   }
+
+   .site-nav a:hover,
+   .user-nav a:hover {
+       color: var(--red-light);
+   }
+
+   .user-nav a:focus,
+   .site-nav a:focus {
+       color: var(--clear-black);
+   }
+   .user-nav a:active,
+   .site-nav a:active {
+    text-decoration: underline;
+    text-decoration-color: var(--red-light);
+   }
+   /* advantages */
+
+   .advantage {
+       text-align: left;
+       background-color: var(--background-gray);
+   }
+
+   .main-advantage-item {
+       font-size: 55px;
+       line-height: 55px;
+   }
+
+   .advantage-item {
+       font-size: 16px;
+       line-height: 24px;
+   }
+
+   .main-slider {
+    background-color: var(--background-gray);
+   }
+
+   /* skills */
+
+   .skills-list {
+       list-style: none;
+   }
+
+   .skills-h1 {
+       font-weight: bold;
+       font-size: 24px;
+       line-height: 30px;
+       text-transform: uppercase;
+       color: var(--basic-black);
+   }
+
+   .skills-h2 {
+       font-weight: normal;
+       font-size: 16px;
+       line-height: 24px;
+   }
+
+   .button-skils-app {
+       background-color: var(--green-light);
+   }
+   .button-skils-app:hover {
+      background-color: var(--green-normal);
+   }
+   .button-skils-app:focus {
+    background-color: var(--green-dark);
+ }
+   .button-skils-pres {
+       background-color: var(--yellow-light);
+   }
+   .button-skils-pres:hover {
+    background-color: var(--yellow-normal);
+   }
+   .button-skils-pres:focus{
+    background-color: var(--yellow-dark);
+   }
+   /* about us  */
+
+   .about-header {
+       font-weight: 500;
+       font-size: 45px;
+       line-height: 45px;
+       color: var(--basic-black;
+       )
+   }
+
+   .aboutus-list {
+       font-weight: bold;
+       font-size: 16px;
+       line-height: 24px;
+       text-transform: uppercase;
+   }
+
+   .aboutus-item {
+       font-size: 16px;
+       line-height: 24px;
+   }
+
+   .statistics-header {
+       font-weight: bold;
+       font-size: 16px;
+       line-height: 24px;
+       text-transform: uppercase;
+       color: var(--basic-black);
+   }
+
+   .statistics-list {
+       list-style: none;
+   }
+
+   .statistics-item-percent {
+       font-size: 45px;
+       line-height: 64px;
+       font-weight: bold;
+       color: var(--basic-black);
+   }
+
+   .statistics-item-text {
+       font-size: 16px;
+       line-height: 18px;
+   }
+
+   /* footer */
+
+   .contacts-name {
+       font-weight: bold;
+       font-size: 18px;
+       line-height: 30px;
+       text-transform: uppercase;
+       color: var(--basic-black);
+   }
+
+   .contacts-adress,
+   .contacts-tel {
+    font-size: 18px;
+    line-height: 30px;
+    text-transform: uppercase;
+    color: var(--footer-font);
+  }
+
+  .letsfrnds {
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 36px;
+    color: var(--basic-black);
+  }
+
+  .sale {
+    font-size: 16px;а
+    color: var(--footer-font2);
+  }
+
+  /* Modal */
+
+  .modal {
+    color: var(--basic-black);
+  background-color: var(--basic-white);
+  }
+.modal h2 {
+  font-weight: bold;
+font-size: 45px;
+line-height: 53px;
+}
+
+.feedback-item {
+  font-weight: bold;
+font-size: 16px;
+line-height: 18px;
+}
+
+.feedback-name {
+  font-size: 16px;
+line-height: 18px;
+color: var(--footer-font2);
+}
