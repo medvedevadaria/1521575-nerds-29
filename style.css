@@ -20,8 +20,9 @@
        --extra-light-gray: #DFDFDF;
        --clear-black: rgba(0, 0, 0, 0.3);
        --footer-font: #666666;
-       --footer-font2: ##444444;
+       --footer-font2: #444444;
    }
+
    /* Global */
 
    body {
@@ -50,7 +51,7 @@
 
    .button {
        font: inherit;
-       text-align: : left;
+       text-align: center;
        color: var(--basic-white);
        vertical-align: middle;
        text-transform: uppercase;
@@ -119,11 +120,7 @@
    .main-advantage-item {
        font-size: 55px;
        line-height: 55px;
-   }
-
-   .advantage-item {
-       font-size: 16px;
-       line-height: 24px;
+       color: var(--basic-black);
    }
 
    .main-slider {
@@ -144,12 +141,6 @@
        color: var(--basic-black);
    }
 
-   .skills-h2 {
-       font-weight: normal;
-       font-size: 16px;
-       line-height: 24px;
-   }
-
    .button-skils-app {
        background-color: var(--green-light);
    }
@@ -157,10 +148,10 @@
       background-color: var(--green-normal);
    }
    .button-skils-app:focus {
-    background-color: var(--green-dark);
+      background-color: var(--green-dark);
  }
    .button-skils-pres {
-       background-color: var(--yellow-light);
+      background-color: var(--yellow-light);
    }
    .button-skils-pres:hover {
     background-color: var(--yellow-normal);
@@ -170,12 +161,11 @@
    }
    /* about us  */
 
-   .about-header {
-       font-weight: 500;
-       font-size: 45px;
-       line-height: 45px;
-       color: var(--basic-black;
-       )
+   .aboutus-header {
+     font-weight: 500;
+     font-size: 45px;
+     line-height: 45px;
+     color: var(--basic-black);
    }
 
    .aboutus-list {
@@ -183,11 +173,6 @@
        font-size: 16px;
        line-height: 24px;
        text-transform: uppercase;
-   }
-
-   .aboutus-item {
-       font-size: 16px;
-       line-height: 24px;
    }
 
    .statistics-header {
@@ -213,6 +198,11 @@
        font-size: 16px;
        line-height: 18px;
    }
+   /* partner */
+
+   .partners-list {
+    list-style: none;
+   }
 
    /* footer */
 
@@ -228,10 +218,15 @@
    .contacts-tel {
     font-size: 18px;
     line-height: 30px;
-    text-transform: uppercase;
     color: var(--footer-font);
   }
 
+  .social {
+    list-style: none;
+  }
+  .social-button {
+   background-color: var(--gray-social);
+}
   .letsfrnds {
     font-weight: bold;
     font-size: 36px;
@@ -240,7 +235,7 @@
   }
 
   .sale {
-    font-size: 16px;а
+    font-size: 16px;
     color: var(--footer-font2);
   }
 
