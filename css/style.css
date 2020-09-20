@@ -61,6 +61,7 @@
        padding-left: 30px;
        padding-right: 30px;
        border-radius: 3px;
+       font-weight: 500;
    }
 
    .button:hover {
@@ -68,7 +69,9 @@
    }
    .button:focus{
      background-color: var(--red-dark);
+     opacity: 0.1;
    }
+
    /* main navigation */
 
    .main-header {
@@ -112,15 +115,22 @@
    }
    /* advantages */
 
-   .advantage {
-       text-align: left;
+   .advantage,
+   .title {
        background-color: var(--background-gray);
    }
+
+  .title {
+  font-weight: 500;
+  font-size: 55px;
+  line-height: 55px;
+}
 
    .main-advantage-item {
        font-size: 55px;
        line-height: 55px;
        color: var(--basic-black);
+       text-align: left;
    }
 
    .main-slider {
@@ -141,24 +151,27 @@
        color: var(--basic-black);
    }
 
-   .button-skils-app {
+   .button-skills-app {
        background-color: var(--green-light);
    }
-   .button-skils-app:hover {
+   .button-skills-app:hover {
       background-color: var(--green-normal);
    }
-   .button-skils-app:focus {
+   .button-skills-app:focus {
       background-color: var(--green-dark);
+      opacity: 0.1;
  }
-   .button-skils-pres {
+   .button-skills-pres {
       background-color: var(--yellow-light);
    }
-   .button-skils-pres:hover {
+   .button-skills-pres:hover {
     background-color: var(--yellow-normal);
    }
-   .button-skils-pres:focus{
+   .button-skills-pres:focus{
     background-color: var(--yellow-dark);
+    opacity: 0.1;
    }
+
    /* about us  */
 
    .aboutus-header {
@@ -198,20 +211,114 @@
        font-size: 16px;
        line-height: 18px;
    }
+
    /* partner */
 
    .partners-list {
     list-style: none;
    }
 
-   /* footer */
+  /* filter form */
 
-   .contacts-name {
-       font-weight: bold;
-       font-size: 18px;
-       line-height: 30px;
-       text-transform: uppercase;
-       color: var(--basic-black);
+  .button-form{
+   background-color: var(--background-gray);
+   color: var(--clear-black);
+  }
+
+  .button-form:hover{
+    background-color: var(--extra-light-gray);
+    color: var(--clear-black);
+  }
+
+  .button-form:focus{
+    background-color: var(--light-gray);
+    color: var(--clear-black);
+  }
+
+/* Sorting */
+
+.sorting-header {
+  font-size: 18px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: var(--basic-black);
+}
+
+ .sorting {
+  list-style: none;
+}
+ .sorting-item a {
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: var(--basic-black);
+  opacity: 0.3;
+ }
+
+ .sorting-item a:hover {
+  opacity: 0.6;
+ }
+
+.sorting-item a:focus,
+.sorting-item a:active {
+  opacity: 1;
+ }
+
+/* Catalog */
+
+.catalog-list {
+  list-style: none;
+}
+
+.h1-catalog-item {
+  font-size: 18px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: var(--basic-black);
+}
+
+.p-catalog-item {
+  font-size: 16px;
+  line-height: 18px;
+  color: var(--basic-black);
+}
+
+/* Pagination */
+
+.pagination {
+  list-style: none;
+}
+
+.pagination-item a {
+  background-color: var(--background-gray);
+  color: var(--basic-black);
+}
+
+.pagination-item a:hover {
+  background-color: var(--extra-light-gray);
+}
+
+.pagination-item:focus {
+  background-color: var(--extra-light-gray);
+  opacity: 0.3;
+}
+
+.pagination-item-current a
+.pagination-item-current a:hover
+.pagination-item-current a:focus
+.pagination-item-current a:active {
+  background-color: var(--basic-white);
+  color: var(--basic-black);
+}
+
+/* Footer */
+
+.contacts-name {
+   font-weight: bold;
+   font-size: 18px;
+   line-height: 30px;
+   text-transform: uppercase;
+   color: var(--basic-black);
    }
 
    .contacts-adress,
@@ -239,7 +346,7 @@
     color: var(--footer-font2);
   }
 
-  /* Modal */
+/* Modal */
 
   .modal {
     color: var(--basic-black);
