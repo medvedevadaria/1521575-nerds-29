@@ -108,8 +108,9 @@
    .site-nav a:focus {
        color: var(--clear-black);
    }
+
    .user-nav a:active,
-   .site-nav a:active {
+   .site-nav a:active, {
     text-decoration: underline;
     text-decoration-color: var(--red-light);
    }
@@ -222,17 +223,18 @@
 
   .button-form{
    background-color: var(--background-gray);
-   color: var(--clear-black);
+   color: var(--basic-black);
   }
 
   .button-form:hover{
     background-color: var(--extra-light-gray);
-    color: var(--clear-black);
+    color: var(--basic-black);
   }
 
   .button-form:focus{
     background-color: var(--light-gray);
-    color: var(--clear-black);
+    color: var(--basic-black);
+    opacity: 0.3;
   }
 
 /* Sorting */
@@ -273,6 +275,7 @@
 .h1-catalog-item {
   font-size: 18px;
   line-height: 30px;
+  font-weight: 700;
   text-transform: uppercase;
   color: var(--basic-black);
 }
@@ -290,25 +293,21 @@
 }
 
 .pagination-item a {
-  background-color: var(--background-gray);
   color: var(--basic-black);
+  background-color: var(--background-gray);
 }
 
 .pagination-item a:hover {
   background-color: var(--extra-light-gray);
 }
 
-.pagination-item:focus {
+.pagination-item a:focus {
   background-color: var(--extra-light-gray);
   opacity: 0.3;
 }
 
-.pagination-item-current a
-.pagination-item-current a:hover
-.pagination-item-current a:focus
-.pagination-item-current a:active {
+.pagination-item-active {
   background-color: var(--basic-white);
-  color: var(--basic-black);
 }
 
 /* Footer */
@@ -331,9 +330,11 @@
   .social {
     list-style: none;
   }
+
   .social-button {
    background-color: var(--gray-social);
 }
+
   .letsfrnds {
     font-weight: bold;
     font-size: 36px;
@@ -343,6 +344,7 @@
 
   .sale {
     font-size: 16px;
+    line-height: 22px;
     color: var(--footer-font2);
   }
 
