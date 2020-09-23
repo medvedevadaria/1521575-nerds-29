@@ -110,7 +110,7 @@
    }
 
    .user-nav a:active,
-   .site-nav a:active, {
+   .site-nav a:active {
     text-decoration: underline;
     text-decoration-color: var(--red-light);
    }
