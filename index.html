@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
 
 <head>
   <meta charset="utf-8">
@@ -12,7 +12,7 @@
 
 <body class="page-body">
   <header class="main-header">
-    <nav>
+    <nav class="main-wrapper">
     <div class="main-logo">
     <a class="main-header-logo">
       <img src="img/nerds-logo-main.svg" width="160" height="65" alt="Логотип Нёрдс ч/б">
@@ -30,6 +30,7 @@
     </nav>
   </header>
   <main class="container">
+  <div class="slider">
     <!-- <h1>Дизайн-студия "nёrd's"</h1> -->
     <section class="advantage">
       <h2 class="main-advantage-item">Долго, дорого <br>
@@ -44,9 +45,10 @@
         <img src="img/nerds-index-slide1.png" width="1157" height="431" alt="слайд1">
       </figure>
     </div>
+  </div>
     <section>
+    <!-- <h2>Что мы умеем делать</h2> -->
     <div class="skills-column">
-      <!-- <h2>Что мы умеем делать</h2> -->
       <ul class="skills-list">
         <li class="skills-item">
           <h3 class="skills-h1">ВЕБ-САЙТЫ</h3>
@@ -69,8 +71,8 @@
       </ul>
     </div>
     </section>
-    <section>
-      <div class="aboutus">
+    <section class="aboutus">
+      <div class="aboutus-text">
         <h2 class="aboutus-header">Мы - маленькая, но гордая<br>
           дизайн-студия из Краснодара.</h2>
         <p class="aboutus-body">Исповедуем принципы минимализма и чистоты. Ставим математический расчет<br>
@@ -88,17 +90,17 @@
         </a>
         <h5 class="statistics-header">с 2004 года любим точность во всем:</h5>
         <ul class="statistics-list">
-          <li>
+          <li class="item-statistics">
             <p class="statistics-item-percent">146%</p>
             <p class="statistics-item-text">Уровень<br>
               самоотдачи</p>
           </li>
-          <li>
+          <li class="item-statistics">
             <p class="statistics-item-percent">100%</p>
             <p class="statistics-item-text">Соблюдение<br>
               сроков</p>
           </li>
-          <li>
+          <li class="item-statistics">
             <p class="statistics-item-percent">50%</p>
             <p class="statistics-item-text">Минимальная<br>
               предоплата</p>
@@ -132,7 +134,7 @@
       </ul>
     </section>
   </main>
-  <footer class="page-footer">
+  <footer class="page-footer main-footer">
     <section class="contacts">
       <h3>Контакты</h3>
   <div>
@@ -144,11 +146,11 @@
         <p class="contacts-tel">тел.+7(812)275-75-75<br></p>
         <a class="button" href="blank.html">НАПИШИТЕ НАМ</a>
       </div>
-      <div>
+  <div class="footer-social">
       <!-- <h4>Соцсети</h4> -->
     <ul class="social">
        <li>
-        <a class="social-button" href="blank.html">
+        <a class="social-button" href="blank.html" >
           <img src="img/vk-icon.svg" width="26" height="15" alt="vk">
         </a>
        </li>
@@ -163,10 +165,10 @@
         </a>
        </li>
      </ul>
-  </div>
-  <div>
+    <div>
         <h4 class="letsfrnds">Давайте дружить, это выгодно!</h4>
         <p class="sale">Скидка 10% для друзей из социальных сетей.</p>
+    </div>
   </div>
     </section>
   </footer>

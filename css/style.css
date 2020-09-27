@@ -26,7 +26,7 @@
    /* Global */
 
    body {
-       min-width: 960px;
+       min-width: 1160px;
        margin: 0;
        padding: 0;
        font-family: "Roboto", Arial, sans-serif;
@@ -49,48 +49,80 @@
        height: auto;
    }
 
-   .button {
-       font: inherit;
-       text-align: center;
-       color: var(--basic-white);
-       vertical-align: middle;
-       text-transform: uppercase;
-       background-color: var(--red-light);
-       border: none;
-       padding: 15px;
-       padding-left: 30px;
-       padding-right: 30px;
-       border-radius: 3px;
-       font-weight: 500;
+
+/* Grid */
+
+.page {
+ height: 100%;
+ width: 100%;
+}
+
+.page-body {
+ min-height: 100%;
+ display: grid;
+ grid-template-rows: min-content 1fr min-content;
+ align-content: start;
+ width: 1440px;
+ padding-left: 20px;
+ padding-right: 20px;
+
+  }
+
+
+
+
+.button {
+  text-align: center;
+  color: var(--basic-white);
+  vertical-align: middle;
+  text-transform: uppercase;
+  background-color: var(--red-light);
+  border: none;
+  padding: 15px;
+  padding-left: 30px;
+  padding-right: 30px;
+  border-radius: 3px;
+  font-weight: 500;
+  font: inherit;
    }
 
-   .button:hover {
-     background-color: var(--red-normal);
+.button:hover {
+  background-color: var(--red-normal);
    }
-   .button:focus{
-     background-color: var(--red-dark);
-     opacity: 0.1;
+
+.button:focus{
+  opacity: 0.1;
+  background-color: var(--red-dark);
    }
 
    /* main navigation */
 
-   .main-header {
-       font-size: 16px;
-       line-height: 30px;
-       color: var(--basic-black);
-       background-color: var(--background-gray);
-       font-weight: 500;
-       align-items: center;
-       text-transform: uppercase;
-   }
-
+.main-header {
+  width: auto;
+  padding-left: 140px;
+  padding-right: 143px;
+  line-height: 30px;
+  color: var(--basic-black);
+  background-color: var(--background-gray);
+  font-weight: 500;
+  align-items: center;
+  text-transform: uppercase;
+  margin: 0px;
+}
+.main-wrapper {
+  width: auto;
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
+}
    .main-header a {
        color: var(--basic-black)
    }
 
    .site-nav,
    .user-nav a {
-       list-style: none;
+     list-style: none;
+     margin: 0;
+     padding: 0;
    }
    /* user navigation */
 
@@ -114,6 +146,17 @@
     text-decoration: underline;
     text-decoration-color: var(--red-light);
    }
+
+  /* Slider */
+  .slider {
+    background-color: var(--background-gray);
+    width: auto;
+    padding-left: 140px;
+    padding-right: 143px;
+    display:grid;
+    grid-template-columns: 1fr 3fr;
+  }
+
    /* advantages */
 
    .advantage,
@@ -127,7 +170,7 @@
   line-height: 55px;
 }
 
-   .main-advantage-item {
+.main-advantage-item {
        font-size: 55px;
        line-height: 55px;
        color: var(--basic-black);
@@ -140,8 +183,19 @@
 
    /* skills */
 
-   .skills-list {
-       list-style: none;
+  .skills-list {
+   list-style: none;
+   width: auto;
+   display:grid;
+   grid-template-columns: 33.3% 33.3% 33.3%;
+   padding-left: 140px;
+   padding-right: 200px;
+   margin-top: 87px;
+   margin-bottom: 150px;
+   column-gap: 100px;
+   margin-left: 140px;
+   margin-right: 140px;
+
    }
 
    .skills-h1 {
@@ -175,6 +229,13 @@
 
    /* about us  */
 
+   .aboutus {
+     display: grid;
+     grid-template-columns: 2fr 1fr;
+     margin-left: 140px;
+     margin-right: 140px;
+   }
+
    .aboutus-header {
      font-weight: 500;
      font-size: 45px;
@@ -198,7 +259,9 @@
    }
 
    .statistics-list {
-       list-style: none;
+    list-style: none;
+    display: grid;
+    grid-template-columns: 33.3% 33.3% 33.3%;
    }
 
    .statistics-item-percent {
@@ -217,6 +280,10 @@
 
    .partners-list {
     list-style: none;
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25% ;
+    margin-left: 140px;
+     margin-right: 140px;
    }
 
   /* filter form */
@@ -327,8 +394,16 @@
     color: var(--footer-font);
   }
 
+  .footer-social{
+    display: grid;
+    grid-template-columns: 30% 70%;
+    column-gap: 100px;
+    margin-top: 73px;
+  }
   .social {
     list-style: none;
+    display: grid;
+    grid-template-columns: auto auto auto;
   }
 
   .social-button {
