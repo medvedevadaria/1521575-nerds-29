@@ -11,155 +11,190 @@
 
 <body class="page-body inner-page">
   <header class="main-header">
-    <nav>
-    <div class="main-logo">
-    <a href="index.html">
-      <img src="img/nerds-logo-main.svg" width="160" height="65" alt="Логотип Нёрдс ч/б">
-      </a>
+    <div class="container">
+      <nav class="main-wrapper">
+        <div class="main-logo">
+          <a href="index.html">
+            <img src="img/nerds-logo-main.svg" width="160" height="65" alt="Логотип Нёрдс ч/б">
+          </a>
+        </div>
+        <ul class="site-nav">
+          <li> <a href="blank.html">СТУДИЯ</a> </li>
+          <li> <a href="blank.html">КЛИЕНТЫ</a> </li>
+          <li> <a href="catalog.html">МАГАЗИН</a> </li>
+          <li> <a href="blank.html">КОНТАКТЫ</a> </li>
+        </ul>
+        <div class="user-nav">
+          <a class="cart-link" href="blank.html">КОРЗИНА</a>
+        </div>
+      </nav>
     </div>
-    <ul class="site-nav">
-      <li> <a href="blank.html">СТУДИЯ</a> </li>
-      <li> <a href="blank.html">КЛИЕНТЫ</a> </li>
-      <li> <a href="catalog.html">МАГАЗИН</a> </li>
-      <li> <a href="blank.html">КОНТАКТЫ</a> </li>
-    </ul>
-    <div class="user-nav">
-       <a class="cart-link" href="blank.html">КОРЗИНА</a>
-    </div>
-    </nav>
   </header>
-<main>
-<h1 class="title">Магазин готовых шаблонов</h1>
-<section>
-  <h2>Фильтр шаблонов</h2>
-  <!-- Здесь будет форма фильтра -->
-  <form action="https://echo.htmlacademy.ru/" method="post">
-  <input class="button button-form" type="submit" value="Показать">
-  </form>
-</section>
-<section>
-  <h2 class="sorting-header">сортировать</h2>
-  <ul class="sorting">
-    <li class="sorting-item">
-      <a href="blank.html">по цене</a>
-    </li>
-    <li class="sorting-item">
-      <a href="blank.html">по типу</a>
-    </li>
-    <li class="sorting-item">
-      <a href="blank.html">по названию</a>
-    </li>
-    <li class="sorting-item">
-      <a href="blank.html">по убыванию</a>
-    </li>
-    <li class="sorting-item">
-      <a href="blank.html">по возрастанию</a>
-    </li>
-  </ul>
-</section>
-<section>
-  <h2 class="catalog">Список (каталог) шаблонов</h2>
-  <ul class="catalog-list">
-    <li class="catalog-item">
-      <a href="blank.html">
-        <img src="img/img-sedona-1.jpg" width="359" height="578" alt="седона">
-      </a>
-      <h4 class="h1-catalog-item">SEDONA</h4>
-      <p class="p-catalog-item">Информационный сайт для туристов</p>
-      <a class="button button-catalog" href="blank.html">9 900 ₽</a>
-    </li>
-    <li class="catalog-item">
-      <a href="blank.html">
-        <img src="img/img-pink-1.jpg" width="358" height="578" alt="Pink">
-      </a>
-      <h4 class="h1-catalog-item">название</h4>
-      <p class="p-catalog-item">описание</p>
-      <a class="button button-catalog" href="blank.html">цена ₽</a>
-    </li>
-    <li class="catalog-item">
-      <a href="blank.html">
-        <img src="img/img-barbershop-1.png" width="358" height="578" alt="Borodinski">
-      </a>
-      <h4 class="h1-catalog-item">название</h4>
-      <p class="p-catalog-item">описание</p>
-      <a class="button" href="blank.html">цена ₽</a>
-    </li>
-    <li class="catalog-item">
-      <a href="blank.html">
-        <img src="img/img-mishka-1.png" width="358" height="578" alt="Mishka">
-      </a>
-      <h4 class="h1-catalog-item">название</h4>
-      <p class="p-catalog-item">описание</p>
-      <a class="button" href="blank.html">цена ₽</a>
-    </li>
-    <li class="catalog-item">
-      <a href="blank.html">
-        <img src="img/img-aplus-1.png" width="358" height="578" alt="Aplus">
-      </a>
-      <h4 class="h1-catalog-item">название</h4>
-      <p class="p-catalog-item">описание</p>
-      <a class="button button-catalog" href="blank.html">цена ₽</a>
-    </li>
-    <li class="catalog-item">
-      <a href="blank.html">
-        <img src="img/img-kvast-1.png" width="358" height="578" alt="Kvas">
-      </a>
-      <h4 class="h1-catalog-item">название</h4>
-      <p class="p-catalog-item">описание</p>
-      <a class="button button-catalog" href="blank.html">цена ₽</a>
-    </li>
-  </ul>
-</section>
-<ul class="pagination">
-  <li class="pagination item-active"><a>1</a>
-  </li>
-  <li class="pagination-item"> <a href="blank.html">2</a>
-  </li>
-  <li class="pagination-item"><a href="blank.html">3</a>
-  </li>
-  <li class="pagination-item"><a href="blank.html">Следующая</a>
-  </li>
-</ul>
+  <main class="">
+    <h1 class="title">Магазин готовых шаблонов</h1>
+    <div class="inner container">
+      <section class="filter">
+        <h2>Фильтр шаблонов</h2>
+        <!-- Здесь будет форма фильтра -->
+        <form action="https://echo.htmlacademy.ru/" method="post">
+          <input class="button button-form" type="submit" value="Показать">
+        </form>
+      </section>
+      <section class="sort-bar">
+        <h2 class="sorting-header">сортировать:</h2>
+        <ul class="sorting">
+          <li class="sorting-item">
+            <a href="blank.html">по цене</a>
+          </li>
+          <li class="sorting-item">
+            <a href="blank.html">по типу</a>
+          </li>
+          <li class="sorting-item">
+            <a href="blank.html">по названию</a>
+          </li>
+          <li class="sorting-item">
+            <a href="blank.html">по убыванию</a>
+          </li>
+          <li class="sorting-item">
+            <a href="blank.html">по возрастанию</a>
+          </li>
+        </ul>
+      </section>
 
-</main>
-<footer class="page-footer">
-  <section class="contacts">
-    <h3>Контакты</h3>
-<div>
-      <img src="img/map-1.png" width="1440" height="416" alt="карта проезда"><br>
-      <img src="img/map-marker-1.png" width="231" height="190" alt="location"><br>
-      <p class="contacts-name">NЁRDS DESIGN STUDIO</p>
-      <p class="contacts-adress">191186, Санкт-Петербург,<br>
-        ул.Б.Конюшенная,д.19/8Б</p>
-      <p class="contacts-tel">тел.+7(812)275-75-75<br></p>
-      <a class="button" href="blank.html">НАПИШИТЕ НАМ</a>
+      <section class="catalog">
+        <h2>Список (каталог) шаблонов</h2>
+        <ul class="catalog-list">
+          <li class="catalog-item">
+            <a href="blank.html">
+              <img src="img/img-sedona-1.jpg" width="359" height="578" alt="седона">
+            </a>
+            <h4 class="h1-catalog-item">SEDONA</h4>
+            <p class="p-catalog-item">Информационный сайт для туристов</p>
+            <a class="button button-catalog" href="blank.html">9 900 ₽</a>
+          </li>
+          <li class="catalog-item">
+            <a href="blank.html">
+              <img src="img/img-pink-1.jpg" width="358" height="578" alt="Pink">
+            </a>
+            <h4 class="h1-catalog-item">название</h4>
+            <p class="p-catalog-item">описание</p>
+            <a class="button button-catalog" href="blank.html">цена ₽</a>
+          </li>
+          <li class="catalog-item">
+            <a href="blank.html">
+              <img src="img/img-barbershop-1.png" width="358" height="578" alt="Borodinski">
+            </a>
+            <h4 class="h1-catalog-item">название</h4>
+            <p class="p-catalog-item">описание</p>
+            <a class="button" href="blank.html">цена ₽</a>
+          </li>
+          <li class="catalog-item">
+            <a href="blank.html">
+              <img src="img/img-mishka-1.png" width="358" height="578" alt="Mishka">
+            </a>
+            <h4 class="h1-catalog-item">название</h4>
+            <p class="p-catalog-item">описание</p>
+            <a class="button" href="blank.html">цена ₽</a>
+          </li>
+          <li class="catalog-item">
+            <a href="blank.html">
+              <img src="img/img-aplus-1.png" width="358" height="578" alt="Aplus">
+            </a>
+            <h4 class="h1-catalog-item">название</h4>
+            <p class="p-catalog-item">описание</p>
+            <a class="button button-catalog" href="blank.html">цена ₽</a>
+          </li>
+          <li class="catalog-item">
+            <a href="blank.html">
+              <img src="img/img-kvast-1.png" width="358" height="578" alt="Kvas">
+            </a>
+            <h4 class="h1-catalog-item">название</h4>
+            <p class="p-catalog-item">описание</p>
+            <a class="button button-catalog" href="blank.html">цена ₽</a>
+          </li>
+        </ul>
+      </section>
+
+      <ul class="pagination container">
+        <li class="pagination-item-active"><a>1</a>
+        </li>
+        <li class="pagination-item"> <a href="blank.html">2</a>
+        </li>
+        <li class="pagination-item"><a href="blank.html">3</a>
+        </li>
+        <li class="pagination-item"><a href="blank.html">Следующая</a>
+        </li>
+      </ul>
     </div>
-    <div>
-    <!-- <h4>Соцсети</h4> -->
-  <ul class="social">
-     <li>
-      <a class="social-button" href="blank.html">
-        <img src="img/vk-icon.svg" width="26" height="15" alt="vk">
-      </a>
-     </li>
-     <li>
-      <a class="social-button" href="blank.html">
-        <img src="img/fb-icon.svg" width="12" height="22" alt="fb">
-      </a>
-     </li>
-     <li>
-      <a class="social-button" href="blank.html">
-        <img src="img/insta-icon.svg" width="21" height="21" alt="inst">
-      </a>
-     </li>
-   </ul>
-</div>
-<div>
-      <h4 class="letsfrnds">Давайте дружить, это выгодно!</h4>
-      <p class="sale">Скидка 10% для друзей из социальных сетей.</p>
-</div>
-  </section>
-</footer>
+  </main>
 
+  <footer class="page-footer main-footer">
+    <section class="contacts">
+      <h3>Контакты</h3>
+      <img src="img/map-1.png" width="1440" height="416" alt="карта проезда">
+      <div class="container">
+        <img src="img/map-marker-1.png" width="231" height="190" alt="location">
+
+        <div class="contacts__list">
+          <p class="contacts-name">NЁRDS DESIGN STUDIO</p>
+          <p class="contacts-adress">191186, Санкт-Петербург,<br>
+            ул.Б.Конюшенная,д.19/8Б</p>
+          <p class="contacts-tel">тел.+7(812)275-75-75<br></p>
+          <a class="button" href="blank.html">НАПИШИТЕ НАМ</a>
+        </div>
+      </div>
+
+
+    </section>
+
+    <div class="footer-social container">
+      <!-- <h4>Соцсети</h4> -->
+      <ul class="social">
+        <li>
+          <a class="social-button" href="blank.html">
+            <img src="img/vk-icon.svg" width="26" height="15" alt="vk">
+          </a>
+        </li>
+        <li>
+          <a class="social-button" href="blank.html">
+            <img src="img/fb-icon.svg" width="12" height="22" alt="fb">
+          </a>
+        </li>
+        <li>
+          <a class="social-button" href="blank.html">
+            <img src="img/insta-icon.svg" width="21" height="21" alt="inst">
+          </a>
+        </li>
+      </ul>
+      <div>
+        <h4 class="letsfrnds">Давайте дружить, это выгодно!</h4>
+        <p class="sale">Скидка 10% для друзей из социальных сетей.</p>
+      </div>
+    </div>
+  </footer>
+
+
+
+
+  <section class="modal">
+    <h2>Напишите нам</h2>
+    <form class="feedback" action="#" method="post">
+      <p class="feedback-item">
+        <label>Ваше имя</label>
+        <input class="feedback-name" type="text" name="name" placeholder="Имя Фамилия">
+      </p>
+      <p class="feedback-item">
+        <label>Ваш email:</label>
+        <input class="feedback-name" type="text" name="name" placeholder="email@example.com">
+      </p>
+      <p class="feedback-item">
+        <label>Текст письма:</label>
+        <textarea class="feedback-name" name="comment" rows="10" cols="100">В свободной форме</textarea>
+      </p>
+      <input class="button" type="submit" value="Отправить">
+      <button type="button">Закрыть</button>
+    </form>
+  </section>
 </body>
+
 </html>

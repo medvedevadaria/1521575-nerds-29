@@ -152,10 +152,19 @@ img {
   grid-template-columns: 1fr 3fr;
 }
 
+/* Inner */
+
+.inner {
+  display:grid;
+  grid-template-columns: 300px 1fr;
+}
+
+
+
+
 /* advantages */
 
-.advantage,
-.title {
+.advantage {
   background-color: var(--background-gray);
 }
 
@@ -163,6 +172,11 @@ img {
   font-weight: 500;
   font-size: 55px;
   line-height: 55px;
+  background-color: var(--background-gray);
+  text-align: center;
+  margin-top: 0;
+  padding-top: 85px;
+  padding-bottom: 108px;
 }
 
 .main-advantage-item {
@@ -175,6 +189,7 @@ img {
 .main-slider {
   background-color: var(--background-gray);
 }
+
 
 /* skills */
 .skills {
@@ -325,6 +340,12 @@ img {
 
 .sorting {
   list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sort-bar {
+  grid-column: 2/3;
 }
 
 .sorting-item a {
@@ -345,6 +366,11 @@ img {
 }
 
 /* Catalog */
+
+.catalog {
+  grid-column: 2/3;
+  margin-left: 140px;
+}
 
 .catalog-list {
   list-style: none;
@@ -368,6 +394,9 @@ img {
 
 .pagination {
   list-style: none;
+  grid-column: 2/3;
+  margin-left: 140px;
+  margin-bottom: 55px;
 }
 
 .pagination-item a {
