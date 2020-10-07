@@ -105,10 +105,13 @@ img {
 }
 
 .main-wrapper {
-  width: auto;
-  display: grid;
-  grid-template-columns: 1fr 3fr min-content;
-  align-items:center;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  width: 1160px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
 .main-header a {
@@ -130,6 +133,9 @@ img {
 .site-nav a,
 .user-nav a {
   color: var(--basic-black);
+  max-width: 125px;
+  padding-left: 40px;
+  margin-left: auto;
 }
 
 .site-nav a:hover,
@@ -167,6 +173,8 @@ img {
 
 .filter {
   grid-row: 1/3;
+  width: 320px;
+  margin-right: 80px;
 }
 
 
@@ -216,15 +224,15 @@ img {
 .skills-list {
   list-style: none;
   margin: 0;
-  padding-left: 0;
-  width: auto;
-  display: grid;
-  grid-template-columns: 33.3% 33.3% 33.3%;
-  column-gap: 100px;
+  padding: 0;
+  margin-bottom: 80px;
+  display: flex;
+  justify-content: space-between;
+
 }
 
-.skills-list > li {
-  width: 300px;
+.skills-item {
+width: 320px;
 }
 
 .skills-h1 {
@@ -235,6 +243,9 @@ img {
   color: var(--basic-black);
 }
 
+.skills-h2{
+  margin-bottom: 32px;
+}
 .button-skills-app {
   background-color: var(--green-light);
 }
@@ -265,12 +276,13 @@ img {
 
 .aboutus {
   margin-top: 120px;
-  display: grid;
-  grid-template-columns: 2fr 1fr;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 73px;
 }
 
 .aboutus-text {
-  width: 651px;
+  width: 700px;
 }
 
 .aboutus-header {
@@ -285,6 +297,14 @@ img {
   font-size: 16px;
   line-height: 24px;
   text-transform: uppercase;
+  margin-bottom: 35px;
+}
+
+.aboutus-item {
+  margin-bottom: 25px;
+}
+.statistics {
+  width: 370px;
 }
 
 .statistics-header {
@@ -293,13 +313,14 @@ img {
   line-height: 24px;
   text-transform: uppercase;
   color: var(--basic-black);
+  padding-left: 15px;
 }
 
 .statistics-list {
   list-style: none;
   padding-left: 0;
-  display: grid;
-  grid-template-columns: 33.3% 33.3% 33.3%;
+  display: flex;
+  justify-content: space-between;
 }
 
 .statistics-item-percent {
@@ -307,11 +328,14 @@ img {
   line-height: 64px;
   font-weight: bold;
   color: var(--basic-black);
+  margin: 0;
+  text-align: left;
 }
 
 .statistics-item-text {
   font-size: 16px;
   line-height: 18px;
+  text-align: left;
 }
 
 /* partner */
@@ -362,16 +386,25 @@ padding: 0;
   line-height: 30px;
   text-transform: uppercase;
   color: var(--basic-black);
+  width: 145px;
 }
 
 .sorting {
   list-style: none;
   padding: 0;
   margin: 0;
+  width: 300px;
+  padding-right: 50px;
+  display: flex;
+  justify-content: space-between;
 }
 
 .sort-bar {
   grid-column: 2/3;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 48px;
 }
 
 .sorting-item a {
@@ -398,7 +431,23 @@ padding: 0;
 }
 
 .catalog-list {
+  width: 760px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
   list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.catalog-item {
+  width: 358px;
+  margin-bottom: 30px;
+  min-height: 618px;
+}
+
+.card-product {
+  text-align: center;
 }
 
 .h1-catalog-item {
@@ -407,25 +456,36 @@ padding: 0;
   font-weight: 700;
   text-transform: uppercase;
   color: var(--basic-black);
+  margin-top: 26px;
+  margin-bottom: 12px;
 }
 
 .p-catalog-item {
   font-size: 16px;
   line-height: 18px;
   color: var(--basic-black);
+  margin-bottom: 32px;
+}
+
+.button-catalog {
+  margin-bottom: 44px;
 }
 
 /* Pagination */
 
 .pagination {
+  padding: 0;
+  width: 445px;
   list-style: none;
-  padding-left: 0;
-  margin-bottom: 55px;
+  display: flex;
+  justify-content: space-between;
+
 }
 
 .pagination-item a {
   color: var(--basic-black);
   background-color: var(--background-gray);
+  padding: 0;
 }
 
 .pagination-item a:hover {
@@ -464,22 +524,17 @@ padding: 0;
 }
 
 .footer-social {
-  display: grid;
-  grid-template-columns: 30% 70%;
-  column-gap: 100px;
   margin-top: 73px;
+  display: flex;
+  justify-content: space-between;
 }
 
-/* .social {
-  list-style: none;
-  padding-left: 0;
-  display: grid;
-  grid-template-columns: auto auto auto;
-} */
-
+.map {
+}
 .social {
 list-style: none;
 padding: 0;
+width: 260px;
 display: flex;
 justify-content: space-around;
 align-items: center;
@@ -489,6 +544,9 @@ align-items: center;
   background-color: var(--gray-social);
 }
 
+.social-friends {
+  width: 740px;
+}
 .letsfrnds {
   font-weight: bold;
   font-size: 36px;
