@@ -134,7 +134,6 @@
                 </ul>
             </div>
             <div class="statistics">
-                <!--      <img class="statistic-pic" src="img/nerds-illustration-1.png" width="360" height="208" alt="Логотип Нёрдс цветной">-->
                 <h5 class="statistics-header">с 2004 года любим точность во всем:</h5>
                 <ul class="statistics-list">
                     <li class="item-statistics">
@@ -231,24 +230,26 @@
 
 
     <!--Напишите нам-->
-    <section class="modal">
-        <h2>Напишите нам</h2>
+    <section class=" modal modal-feedback">
+        <fieldset>
+            <legend class="modal-title">Напишите нам</legend>
         <form class="feedback" action="#" method="post">
-            <p class="feedback-item">
-                <label>Ваше имя</label>
-                <input class="feedback-name" type="text" name="name" placeholder="Имя Фамилия">
+            <p class="feedback-name">
+                <label>Ваше имя:</label><br>
+                <input class="name" type="text" name="name" placeholder="Имя Фамилия">
             </p>
-            <p class="feedback-item">
-                <label>Ваш email:</label>
-                <input class="feedback-name" type="text" name="name" placeholder="email@example.com">
+            <p class="feedback-email">
+                <label>Ваш email:</label><br>
+                <input class="email" type="text" name="email" placeholder="email@example.com">
             </p>
-            <p class="feedback-item">
-                <label>Текст письма:</label>
-                <textarea class="feedback-name" name="comment" rows="10" cols="100">В свободной форме</textarea>
+            <p class="feedback-text">
+                <label>Текст письма:</label><br>
+                <textarea class="comment" name="comment" rows="4" cols="80">В свободной форме</textarea>
             </p>
-            <input class="button" type="submit" value="Отправить">
-            <button type="button">Закрыть</button>
-        </form>
+          </form>
+            <input class="button feedback-button" type="submit" value="Отправить">
+            <button class="modal-close" type="button" aria-label="Закрыть"></button>
+    </fieldset>
     </section>
 </body>
 
