@@ -268,27 +268,25 @@
     </div>
   </footer>
 
-  <section class="visually-hidden modal modal-feedback">
-    <h2 class="visually-hidden">Напишите нам</h2>
-    <fieldset>
+  <section class="modal modal-feedback">
+    <h2 class="modal-title">Напишите нам</h2>
       <legend class="modal-title">Напишите нам</legend>
-      <form class="feedback" action="#" method="post">
-        <p class="feedback-name">
-          <label>Ваше имя:</label><br>
-          <input class="name" type="text" name="name" placeholder="Имя Фамилия">
+      <form class="feedback" action="https://echo.htmlacademy.ru" method="post">
+        <p class="feedback-item">
+          <label for="feedback-name">Ваше имя:</label><br>
+          <input id="feedback-name" type="text" name="name" placeholder="Имя Фамилия">
         </p>
-        <p class="feedback-email">
-          <label>Ваш email:</label><br>
-          <input class="email" type="text" name="email" placeholder="email@example.com">
+        <p class="feedback-item">
+          <label for="feedback-email">Ваш email:</label><br>
+          <input id="feedback-email" type="text" name="email" placeholder="email@example.com">
         </p>
-        <p class="feedback-text">
-          <label>Текст письма:</label><br>
-          <textarea class="comment" name="comment" rows="4" cols="80" placeholder="В свободной форме"></textarea>
+        <p class="feedback-item">
+          <label for="feedback-text">Текст письма:</label><br>
+          <textarea id="feedback-text" name="comment" rows="5" cols="80" placeholder="В свободной форме"></textarea>
         </p>
+      <button class="button feedback-button" type="submit">Отправить</button>
       </form>
-      <input class="button feedback-button" type="submit" value="Отправить">
       <button class="modal-close" type="button" aria-label="Закрыть"></button>
-    </fieldset>
   </section>
 </body>
 
