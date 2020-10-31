@@ -1115,7 +1115,7 @@ img {
 /* Modal */
 
 .modal {
-  /* display: none; */
+  display: none;
   position: fixed;
   top: 60px;
   right: 0;
