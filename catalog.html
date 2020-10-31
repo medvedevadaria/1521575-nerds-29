@@ -22,7 +22,7 @@
         <ul class="site-nav">
           <li> <a href="blank.html">студия</a> </li>
           <li> <a href="blank.html">клиенты</a> </li>
-          <li> <a href="catalog.html">магазин</a> </li>
+          <li> <a class="active" href="catalog.html">магазин</a> </li>
           <li> <a href="blank.html">контакты</a> </li>
         </ul>
         <div class="user-nav">
@@ -63,7 +63,7 @@
             <ul>
               <li class="filter-option filter-radio">
                 <input class="visually-hidden filter-input-radio filter-input" type="radio" name="product-group"
-                  value="adaptive" id="filter-adaptive">
+                  value="adaptive" id="filter-adaptive" checked>
                 <label for="filter-adaptive">Адаптивная</label>
               </li>
               <li class="filter-option filter-radio">
@@ -89,7 +89,7 @@
               </li>
               <li class="filter-option filter-checkbox">
                 <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="privilege"
-                  id="filter-privilege" checked>
+                  id="filter-privilege">
                 <label for="filter-privilege">Блок преимуществ</label>
               </li>
               <li class="filter-option filter-checkbox">
@@ -99,12 +99,12 @@
               </li>
               <li class="filter-option filter-checkbox">
                 <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="gallery"
-                  id="filter-gallery" checked>
+                  id="filter-gallery">
                 <label for="filter-gallery">Галерея</label>
               </li>
               <li class="filter-option filter-checkbox">
                 <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="cart"
-                  id="filter-cart" checked>
+                  id="filter-cart">
                 <label for="filter-cart">Корзина</label>
               </li>
             </ul>
@@ -117,7 +117,7 @@
       <section class="sort-bar">
         <h2 class="sorting-header">сортировать:</h2>
         <ul class="sorting">
-          <li class="sorting-item">
+          <li class="active-sorting-item">
             <a href="blank.html">по цене</a>
           </li>
           <li class="sorting-item">
@@ -144,7 +144,7 @@
         <ul class="catalog-list">
           <li class="catalog-item">
             <p class="catalog-item-image">
-              <img src="img/img-sedona-1.jpg" width="359" height="578" alt="седона"></p>
+              <img src="img/img-sedona-1.jpg" width="359" height="578" alt="седона" class="catalog-item-img"></p>
             <div class="card-product card-product-current">
               <a href="blank.html">
                 <h4 class="h1-catalog-item">SEDONA</h4>
@@ -156,57 +156,62 @@
           </li>
           <li class="catalog-item">
             <p class="catalog-item-image">
-              <img src="img/img-pink-1.jpg" width="358" height="578" alt="Pink"></p>
+              <img src="img/img-pink-1.jpg" width="358" height="578" alt="Pink" class="catalog-item-img"></p>
             <div class="card-product">
               <a href="blank.html">
-                <h4 class="h1-catalog-item">название</h4>
+                <h4 class="h1-catalog-item">Pink App</h4>
               </a>
-              <p class="p-catalog-item">описание</p>
-              <a class="button button-catalog" href="blank.html">цена ₽</a>
+              <p class="p-catalog-item">Продуктовый лендинг<br>
+                приложения для iOS и Android</p>
+                <a class="button button-catalog" href="blank.html">9 900 ₽</a>
             </div>
           </li>
           <li class="catalog-item">
             <p class="catalog-item-image">
-              <img src="img/img-barbershop-1.png" width="358" height="578" alt="Borodinski"></p>
+              <img src="img/img-barbershop.jpg" width="358" height="578" alt="Borodinski" class="catalog-item-img"></p>
             <div class="card-product">
               <a href="blank.html">
-                <h4 class="h1-catalog-item">название</h4>
+                <h4 class="h1-catalog-item">Barbershop</h4>
               </a>
-              <p class="p-catalog-item">описание</p>
-              <a class="button button-catalog" href="blank.html">цена ₽</a>
+              <p class="p-catalog-item">Сайт салона красоты.<br>
+                Для мужчин, да.</p>
+                <a class="button button-catalog" href="blank.html">9 900 ₽</a>
             </div>
           </li>
           <li class="catalog-item">
             <p class="catalog-item-image">
-              <img src="img/img-mishka-1.png" width="358" height="578" alt="Mishka"></p>
+              <img src="img/img-mishka.jpg" width="358" height="578" alt="Mishka" class="catalog-item-img"></p>
             <div class="card-product">
               <a href="blank.html">
-                <h4 class="h1-catalog-item">название</h4>
+                <h4 class="h1-catalog-item">MISHKA</h4>
               </a>
-              <p class="p-catalog-item">описание</p>
-              <a class="button button-catalog" href="blank.html">цена ₽</a>
+              <p class="p-catalog-item">Интернет-магазин<br>
+                вязаных игрушек</p>
+              <a class="button button-catalog" href="blank.html">9 900 ₽</a>
             </div>
           </li>
           <li class="catalog-item">
             <p class="catalog-item-image">
-              <img src="img/img-aplus-1.png" width="358" height="578" alt="Aplus"></p>
+              <img src="img/img-aplus.jpg" width="358" height="578" alt="Aplus" class="catalog-item-img"></p>
             <div class="card-product">
               <a href="blank.html">
-                <h4 class="h1-catalog-item">название</h4>
+                <h4 class="h1-catalog-item">A Plus</h4>
               </a>
-              <p class="p-catalog-item">описание</p>
-              <a class="button button-catalog" href="blank.html">цена ₽</a>
+              <p class="p-catalog-item">Лендинг курсов повышения <br>
+                квалификации</p>
+              <a class="button button-catalog" href="blank.html">9 900 ₽</a>
             </div>
           </li>
           <li class="catalog-item">
             <p class="catalog-item-image">
-              <img src="img/img-kvast-1.png" width="358" height="578" alt="Kvas"></p>
+              <img src="img/img-kvast.jpg" width="358" height="578" alt="Kvas" class="catalog-item-img"></p>
             <div class="card-product">
               <a href="blank.html">
-                <h4 class="h1-catalog-item">название</h4>
+                <h4 class="h1-catalog-item">КВАСТ</h4>
               </a>
-              <p class="p-catalog-item">описание</p>
-              <a class="button button-catalog" href="blank.html">цена ₽</a>
+              <p class="p-catalog-item">Промо-сайт производителя<br>
+                крафтового кваса</p>
+              <a class="button button-catalog" href="blank.html">9 900 ₽</a>
             </div>
           </li>
         </ul>
@@ -219,7 +224,7 @@
           </li>
           <li class="pagination-item pagination-last-item"><a href="blank.html">Следующая</a>
           </li>
-        </ul>
+      </ul>
       </section>
     </div>
   </main>
@@ -235,7 +240,7 @@
             <p class="contacts-name">NЁRDS DESIGN STUDIO</p>
             <p class="contacts-adress">191186, Санкт-Петербург,<br>
               ул. Б. Конюшенная, д. 19/8</p>
-            <p class="contacts-tel">тел. +7 (812) 275-75-75<br></p>
+            <p class="contacts-tel"><a href="tel:+78122757575">тел. + 7(812) 275-75-75</a><br></p>
             <a class="button contact-button" href="blank.html">НАПИШИТЕ НАМ</a>
           </div>
         </div>
@@ -270,22 +275,22 @@
 
   <section class="modal modal-feedback">
     <h2 class="modal-title">Напишите нам</h2>
-      <form class="feedback" action="https://echo.htmlacademy.ru" method="post">
-        <p class="feedback-item">
-          <label for="feedback-name">Ваше имя:</label><br>
-          <input id="feedback-name" type="text" name="name" placeholder="Имя Фамилия">
-        </p>
-        <p class="feedback-item">
-          <label for="feedback-email">Ваш email:</label><br>
-          <input id="feedback-email" type="text" name="email" placeholder="email@example.com">
-        </p>
-        <p class="feedback-item">
-          <label for="feedback-text">Текст письма:</label><br>
-          <textarea id="feedback-text" name="comment" rows="5" cols="80" placeholder="В свободной форме"></textarea>
-        </p>
+    <form class="feedback" action="https://echo.htmlacademy.ru" method="post">
+      <p class="feedback-item">
+        <label for="feedback-name">Ваше имя:</label><br>
+        <input id="feedback-name" type="text" name="name" placeholder="Имя Фамилия">
+      </p>
+      <p class="feedback-item">
+        <label for="feedback-email">Ваш email:</label><br>
+        <input id="feedback-email" type="text" name="email" placeholder="email@example.com">
+      </p>
+      <p class="feedback-item">
+        <label for="feedback-text">Текст письма:</label><br>
+        <textarea id="feedback-text" name="comment" rows="5" cols="80" placeholder="В свободной форме"></textarea>
+      </p>
       <button class="button feedback-button" type="submit">Отправить</button>
-      </form>
-      <button class="modal-close" type="button" aria-label="Закрыть"></button>
+    </form>
+    <button class="modal-close" type="button" aria-label="Закрыть"></button>
   </section>
 </body>
 
