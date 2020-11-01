@@ -658,7 +658,7 @@ img {
   font-size: 45px;
   line-height: 45px;
   color: var(--basic-black);
-  margin-bottom: 32px;
+  margin-bottom: 36px;
   margin-top: 72px;
 }
 
@@ -701,7 +701,7 @@ img {
   background-image: url(../img/nerds-illustration-1.png);
   background-repeat: no-repeat;
   background-position: 0px 36px;
-  padding-top: 258px;
+  padding-top: 261px;
   width: 360px;
 }
 
@@ -758,7 +758,7 @@ img {
   border-bottom: 2px solid var(--background-gray);
   margin-bottom: 80px;
   box-sizing: border-box;
-  padding: 48px 0 46px 0;
+  padding: 48px 0 44px 0;
 }
 
 
@@ -981,7 +981,7 @@ img {
 }
 
 .contacts-adress {
-  margin-top: 24px;
+  margin-top: 21px;
   font-size: 16px;
   line-height: 18px;
   color: var(--footer-font);
@@ -1039,7 +1039,7 @@ img {
 
 .marker-map {
   position: absolute;
-  top: 89px;
+  top: 86px;
   left: 778px;
   z-index: 2;
 }
@@ -1089,7 +1089,7 @@ img {
   font-size: 36px;
   line-height: 36px;
   color: var(--basic-black);
-  margin-top: 78px;
+  margin-top: 75px;
   margin-bottom: 10px;
 }
 
